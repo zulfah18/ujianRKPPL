@@ -22,10 +22,12 @@ public class testCase {
        System.out.println("==== TESTING DIMULAI ====");
    } 
    
+   
+   
    @Test
    public void test1() {
-       //faktorial
-       int Tampung = s1.faktorial(5);
+       //faktorial 1
+       int Tampung = s1.faktorial(0);
        assertNotNull("seharusnya tidak null", Tampung);
    }
    
@@ -39,13 +41,13 @@ public class testCase {
    @Test
    public void test3() {
        //pangkat
-       assertSame("Harusnya ", 10, s1.pangkat(5, 2));
+       assertNotSame("Harusnya ", 5, s1.pangkat(2, 2));
    }
    
    @Test
    public void test4() {
        //pangkat
-       assertSame("Harusnya ", 6, s1.pangkat(3, 2));
+       assertNotNull("seharusnya tidak null", s1.pangkat(3, 2));
    }
    
    @Test
@@ -55,13 +57,15 @@ public class testCase {
    
    @Test
    public void test6() {
-      assertSame("Harusnya ", 9, s1.perkalian(3, 3));
+      assertNotSame("Harusnya Bukan ", 3, s1.perkalian(3, 4));
    }
    
-   @After
+    @After
    public void testAkhir() {
-       System.out.println("TEST BERAKHIR");
+       System.out.println("==========================");
    }
+   
+  
    
    
    
