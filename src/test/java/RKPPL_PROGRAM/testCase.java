@@ -32,8 +32,8 @@ public class testCase {
    @Test
    public void test2() {
        //faktorial
-       int Tampung2 = s1.faktorial(-1);
-       assertNotNull("seharusnya error", Tampung2);
+       int Tampung2 = s1.faktorial(6);
+       assertNotNull("seharusnya tidak null", Tampung2);
    }
    
    @Test
