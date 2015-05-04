@@ -33,7 +33,7 @@ public class testCase {
    
    @Test
    public void test2() {
-       //faktorial
+       //faktorial 2
        int Tampung2 = s1.faktorial(6);
        assertNotNull("seharusnya tidak null", Tampung2);
    }
